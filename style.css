@@ -727,3 +727,153 @@ article li {
     white-space: nowrap;
   }
 }
+
+/* ===============================
+   CITY WIDE COVERAGE SECTION
+================================ */
+.citywide-coverage {
+  padding: 80px 20px;
+  text-align: center;
+  background: var(--light-bg);
+}
+
+.citywide-coverage h1 {
+  font-size: 2.2rem;
+  color: var(--primary-blue);
+  margin-bottom: 20px;
+}
+
+.citywide-coverage p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: var(--muted-text);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.coverage-map-container {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.coverage-map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Legend styling */
+.coverage-legend {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.coverage-legend ul {
+  display: inline-flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coverage-legend li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: var(--dark-text);
+  font-size: 0.95rem;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.legend-color.digital { background-color: var(--primary-blue); }
+.legend-color.analog { background-color: #ff9900; }
+.legend-color.extended { background-color: #80bfff; }
+
+/* CTA Buttons */
+.citywide-coverage .cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.citywide-coverage .cta-buttons .btn {
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.citywide-coverage .cta-buttons .btn:hover {
+  background: var(--accent-gold);
+  color: var(--primary-blue);
+  transform: translateY(-2px);
+  border-color: var(--accent-gold);
+}
+
+
+/* ===============================
+   GENERAL RESPONSIVE ADJUSTMENTS
+================================ */
+@media (max-width: 768px) {
+  .citywide-coverage h1 {
+    font-size: 1.8rem;
+  }
+
+  .citywide-coverage p {
+    font-size: 1rem;
+  }
+
+  .coverage-legend ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .citywide-coverage .cta-buttons {
+    flex-direction: column;
+  }
+}
+/* Interactive Map Hotspots */
+.map-hotspot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.map-hotspot.digital { background-color: var(--primary-blue); }
+.map-hotspot.analog { background-color: #ff9900; }
+.map-hotspot.extended { background-color: #80bfff; }
+
+.map-hotspot:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+
+/* Tooltip */
+.map-tooltip {
+  position: absolute;
+  padding: 8px 12px;
+  background: var(--primary-blue);
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+  z-index: 1000;
+}
