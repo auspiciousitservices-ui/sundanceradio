@@ -46,3 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+// MOBILE DROPDOWN TOGGLE
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+if (dropdownToggle) {
+  dropdownToggle.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      dropdownToggle.parentElement.classList.toggle('open');
+    }
+  });
+}
