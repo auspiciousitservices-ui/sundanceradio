@@ -529,4 +529,55 @@ article li {
   }
 }
 
+/* FOOTER */
+.site-footer {
+  background: var(--primary-blue);
+  color: #ffffff;
+  padding: 60px 20px 30px;
+  margin-top: 80px;
+}
 
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-column h3 {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer-column p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e0e6eb;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  text-align: center;
+  font-size: 0.85rem;
+  color: #cfd6dc;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-column h3 {
+    margin-top: 20px;
+  }
+}
