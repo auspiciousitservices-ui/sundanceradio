@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sundance Radio</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-bar">
+  <div class="top-bar-container">
+    <a href="tel:14033012700" class="top-bar-item">
+      <span class="icon">📞</span>
+      <span class="text">403-301-2700</span>
+    </a>
+
+    <a href="mailto:info@sundanceradio.ca" class="top-bar-item">
+      <span class="icon">✉️</span>
+      <span class="text">info@sundanceradio.ca</span>
+    </a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="logo-container">
+      <img src="logo.jpg" alt="Sundance Radio Logo">
+    </div>
+
+    <nav class="site-nav">
+      <button class="hamburger" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="radios.html">Radios</a></li>
+        <li><a href="citywide.html">City Wide</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="sundancepoc.html">SundancePOC</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="container">
+<article id="content"></article>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>© Sundance Radio</p>
+</div>
+</footer>
+
+
+<script src="markdown-loader.js"></script>
+<script>loadMarkdown('service.md');</script>
+<script src="main.js"></script>
+</body>
+</html>
