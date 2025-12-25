@@ -102,7 +102,7 @@ body {
 @media (max-width: 768px) {
   .site-nav ul.nav-links {
     position: fixed;
-    top: 150px;                          /* start from very top */
+    top: 180px;                          /* start from very top */
     padding-top: 80px;               /* pushes first link below hamburger */
     height: 100vh;              /* start just below the header */
     left: -260px;            /* hide off-screen */
