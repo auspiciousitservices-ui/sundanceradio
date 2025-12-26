@@ -621,6 +621,10 @@ article li {
   background: transparent;
   color: var(--primary-blue);
   font-weight: 500;
+  margin-bottom: 10px;
+}
+.dropdown-menu li:last-child{
+  margin-bottom: 0px;
 }
 
 .dropdown-menu li a:hover {
