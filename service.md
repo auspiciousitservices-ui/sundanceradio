@@ -1,4 +1,4 @@
-# Contact ctSundance Radio
+# Contact Sundance Radio
 
 
 Have a question, feedback, or an idea to share? We’d love to hear from you.
